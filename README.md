@@ -14,7 +14,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.gradleup.maven-sympathy:maven-sympathy:0.0.1")
+        classpath("com.gradleup.maven-sympathy:maven-sympathy:0.0.2")
     }
 }
 
@@ -31,8 +31,8 @@ It registers a `sympathyForMrMaven` task that checks that none of your project t
 $ ./gradlew :sympathyForMrMaven
 
 > Task :sympathyForMrMaven FAILED
-org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10 changed to 1.9.21
-org.jetbrains.kotlin:kotlin-stdlib:1.8.10 changed to 1.9.21
+e: direct dependency org.jetbrains.kotlin:kotlin-stdlib-common:1.8.21 of configuration 'allSourceSetsCompileDependenciesMetadata' was changed to 1.9.21
+e: direct dependency org.jetbrains.kotlin:kotlin-stdlib:1.8.21 of configuration 'allSourceSetsCompileDependenciesMetadata' was changed to 1.9.21
 
 FAILURE: Build failed with an exception.
 
