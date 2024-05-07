@@ -8,7 +8,6 @@ class MavenSympathyPlugin: Plugin<Project> {
         val taskProvider = target.tasks.register("sympathyForMrMaven", SympathyForMrMaven::class.java) {
             it.group = "verification"
             it.description = "Checks that your project dependencies play nice with Maven resolution strategy. See https://jakewharton.com/nonsensical-maven-is-still-a-gradle-problem/ for more details."
-            it.configurations = target.project.configurations
         }
 
         target.tasks.named("check") {
