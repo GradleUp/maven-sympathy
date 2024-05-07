@@ -23,7 +23,7 @@ gradlePlugin {
 }
 
 group = "com.gradleup.maven-sympathy"
-version = "0.0.1"
+version = "0.0.2"
 
 tasks.withType(JavaCompile::class.java) {
     options.release.set(8)
